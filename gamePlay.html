@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title> GamePlay </title>
+    <h2 style="text-align: center" >Game Play</h2> 
+  </head>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
+  <body> 
+   <script type = "text/javascript">
+      window.result = function (){	    
+      var ran = Math.random();
+      if(ran>=0.5) {
+	if(ran>0.75) {
+	  //alert("You Win !");
+	  document.getElementById("myRock").href="results/rock-win.html";
+	} else {
+	  //alert("You Lose !");
+	  document.getElementById("myRock").href="results/rock-lose.html";
+	}
+      } else if(ran<0.5) {
+	  if(ran<0.25) {
+	    //alert("You Win !");
+	    document.getElementById("myPaper").href="results/paper-win.html";
+	  } else if(ran>=0.25) {
+	      //alert("You Lose !");
+	      document.getElementById("myPaper").href="results/paper-lose.html";
+	  }
+      } else {
+	  if(Math.random() < .05) {
+	    //alert("You Lose ! ");
+	    document.getElementById("myScissors").href="results/scissor-win.html";
+	  } else {
+	    //alert("You Win ! ");
+	    document.getElementById("myScissors").href="results/scissor-lose.html";
+	  } 
+      }
+    }
+   </script>
+   
+   <table border="1" cellpadding="10" cellspacing="10" align="center">
+   <tbody>
+   <tr style = "background-color:#D9EDF7">
+   <td>
+    <!-- Rock attributes -->
+    <a id="myRock">
+    <img id="myRock" align="right" style="width: 50px; height: 100px" src="images/rock.png" onclick="javascript:window.result()" />                 	
+    </a>
+   </td>
+   <td>
+    <!--Paper attributes -->
+    <a id="myPaper">               
+    <img id="myPaper" align="left" style="width: 50px; height: 100px" src="images/paper.png" onclick="javascript:window.result()" />
+    </a>
+   </td>
+   <td>
+    <!-- Scissors attributes -->
+    <a id="myScissors">
+    <img id="myScissors" align="center" style="width: 50px; height: 100px" src="images/scissor.png" onclick="javascript:window.result()" />
+    </a>
+   </td>
+   </tr>
+   </tbody>
+   </table>
+   
+    </br>
+    <!-- Play Again button -->
+    <div class = "wrapper">
+      <button class = "button" onClick="location.href='gamePlay.html'" value="Click Here"> Play Again </button>
+    </div>	  
+  </body>
+</html>                

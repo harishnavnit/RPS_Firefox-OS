@@ -1,0 +1,15 @@
+{
+	"name": "Rock Paper Scissors",
+	"description" : "A primitive game of Rock Paper and Scissors",
+	"launch_path": "/new.html",
+	"icons": {
+		"128":"/rps.png"
+	
+},
+"developer": {
+	"name": "R.Harish Navnit",
+	"url": "https://harishnavnit.wordpress.com"
+
+},
+"default_locale": "en"
+}
