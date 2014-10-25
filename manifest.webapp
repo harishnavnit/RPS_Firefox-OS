@@ -1,7 +1,7 @@
 {
 	"name": "Rock Paper Scissors",
 	"description" : "A primitive game of Rock Paper and Scissors",
-	"launch_path": "/new.html",
+	"launch_path": "/index.html",
 	"icons": {
 		"128":"/rps.png"
 	
